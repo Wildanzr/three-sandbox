@@ -1,0 +1,32 @@
+{
+  "name": "threejs-udemy",
+  "version": "1.0.0",
+  "description": "Learn threejs with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wildanzr/three-sandbox.git"
+  },
+  "keywords": [
+    "threejs",
+    "3d",
+    "webgl"
+  ],
+  "author": "Wildanzrrr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wildanzr/three-sandbox/issues"
+  },
+  "homepage": "https://github.com/Wildanzr/three-sandbox#readme",
+  "devDependencies": {
+    "@types/three": "^0.158.2",
+    "three": "^0.158.0",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
