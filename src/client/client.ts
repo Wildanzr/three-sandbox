@@ -8,8 +8,17 @@ const perCamera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 perCamera.position.z = 2;
 
 // Orthographic Camera
-const orthoCamera = new THREE.OrthographicCamera(-2, 2, 2, -2);
-orthoCamera.position.z = 2;
+const orthoCamera1 = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
+orthoCamera1.position.z = 2;
+orthoCamera1.position.y = 2;
+orthoCamera1.lookAt(new THREE.Vector3());
+
+const orthoCamera2 = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
+orthoCamera2.position.x = -2;
+orthoCamera2.lookAt(new THREE.Vector3());
+
+const orthoCamera3 = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
+orthoCamera3.position.z = 2;
 
 const htmlCanvas1 = document.getElementById("c1") as HTMLCanvasElement;
 const htmlCanvas2 = document.getElementById("c2") as HTMLCanvasElement;
@@ -56,9 +65,9 @@ function animate() {
 
 function render() {
   renderer1.render(scene, perCamera);
-  renderer2.render(scene, orthoCamera);
-  renderer3.render(scene, perCamera);
-  renderer4.render(scene, perCamera);
+  renderer2.render(scene, orthoCamera1);
+  renderer3.render(scene, orthoCamera2);
+  renderer4.render(scene, orthoCamera3);
 }
 
 animate();
